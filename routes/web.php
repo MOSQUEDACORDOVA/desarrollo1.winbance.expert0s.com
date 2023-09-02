@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LandingController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 /*
 |--------------------------------------------------------------------------
@@ -54,6 +55,10 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
     Route::get('/blog15',[HomeController::class, 'blog15'])->name('home.blog15');
     Route::get('/blog16',[HomeController::class, 'blog16'])->name('home.blog16');
     Route::get('/blog17',[HomeController::class, 'blog17'])->name('home.blog17');
+
+  /**Modified by @jochdev */
+    Route::get('/landing',[LandingController::class, 'index'])->name('landing.index');
+   /****/
 
 
     Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controllers\LanguageController@switchLang']);

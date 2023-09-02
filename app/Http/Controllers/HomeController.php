@@ -11,16 +11,16 @@ class HomeController extends Controller
 {
     public function index() {
         return view('home');
-   }
-   public function about() {
+    }
+    public function about() {
         return view('about');
-   }
-   public function trading() {
-    return view('trading');
-}
-public function faq() {
-    return view('faq');
-}
+    }
+    public function trading() {
+        return view('trading');
+    }
+    public function faq() {
+        return view('faq');
+    }
 public function platform() {
     return view('platform');
 }
